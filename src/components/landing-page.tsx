@@ -14,9 +14,7 @@ export function LandingPage() {
   const themeConfig = themes[theme]
 
   const [targetDate, setTargetDate] = useState<Date>(() => {
-    const date = new Date()
-    date.setDate(date.getDate() + 7)
-    return date
+    return new Date("2026-07-10T12:00:00")
   })
 
   const [days, setDays] = useState("7")
@@ -50,98 +48,98 @@ export function LandingPage() {
   > = {
     "minimal-light": {
       badge: "Приглашение на свадьбу",
-      title: "Мы женимся!",
-      highlight: "Приходите",
+      title: "Елизавета & Дмитрий",
+      highlight: "10 июля 2026",
       subtitle:
-        "Дорогие друзья, с радостью приглашаем вас разделить с нами этот особенный день. Нажмите ниже, чтобы подтвердить своё присутствие.",
-      cta: "Подтвердить приглашение",
+        "Дорогие друзья, с радостью приглашаем вас разделить с нами этот особенный день. Подтвердите своё присутствие — мы вас ждём!",
+      cta: "Подтвердить присутствие",
       features: [
-        { icon: Calendar, text: "Дата скоро" },
+        { icon: Calendar, text: "10 июля 2026" },
         { icon: MapPin, text: "Адрес уточняется" },
         { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     dark: {
       badge: "Приглашение на свадьбу",
-      title: "Мы женимся!",
-      highlight: "Приходите",
+      title: "Елизавета & Дмитрий",
+      highlight: "10 июля 2026",
       subtitle: "Дорогие друзья, с радостью приглашаем вас разделить с нами этот особенный день.",
-      cta: "Подтвердить приглашение",
+      cta: "Подтвердить присутствие",
       features: [
-        { icon: Calendar, text: "Дата скоро" },
+        { icon: Calendar, text: "10 июля 2026" },
         { icon: MapPin, text: "Адрес уточняется" },
         { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     retro: {
       badge: "Вас приглашают на свадьбу",
-      title: "Мы женимся!",
-      highlight: "Приходите",
+      title: "Елизавета & Дмитрий",
+      highlight: "10 июля 2026",
       subtitle: "С любовью приглашаем вас на наш особенный день. Ждём вас рядом с нами.",
-      cta: "Подтвердить приглашение",
+      cta: "Подтвердить присутствие",
       features: [
-        { icon: Calendar, text: "Дата скоро" },
+        { icon: Calendar, text: "10 июля 2026" },
         { icon: MapPin, text: "Адрес уточняется" },
         { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     neon: {
       badge: "[ СВАДЕБНОЕ ПРИГЛАШЕНИЕ ]",
-      title: "МЫ ЖЕНИМСЯ",
-      highlight: "ПРИХОДИТЕ",
+      title: "ЕЛИЗАВЕТА & ДМИТРИЙ",
+      highlight: "10.07.2026",
       subtitle: "Самый важный день нашей жизни. Разделите с нами это событие.",
       cta: "ПОДТВЕРДИТЬ ПРИСУТСТВИЕ",
       features: [
-        { icon: Calendar, text: "ДАТА СКОРО" },
+        { icon: Calendar, text: "10 ИЮЛЯ 2026" },
         { icon: MapPin, text: "АДРЕС УТОЧНЯЕТСЯ" },
         { icon: Music, text: "ВЕЧЕРИНКА" },
       ],
     },
     monochrome: {
       badge: "Приглашение",
-      title: "Мы женимся!",
-      highlight: "Приходите",
+      title: "Елизавета & Дмитрий",
+      highlight: "10 июля 2026",
       subtitle: "С радостью приглашаем вас разделить с нами этот особенный день.",
-      cta: "Подтвердить приглашение",
+      cta: "Подтвердить присутствие",
       features: [
-        { icon: Calendar, text: "Дата скоро" },
+        { icon: Calendar, text: "10 июля 2026" },
         { icon: MapPin, text: "Адрес уточняется" },
         { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     glass: {
       badge: "Свадебное приглашение",
-      title: "Мы женимся!",
-      highlight: "Приходите",
+      title: "Елизавета & Дмитрий",
+      highlight: "10 июля 2026",
       subtitle: "Дорогие друзья, с радостью приглашаем вас разделить с нами этот особенный день.",
-      cta: "Подтвердить приглашение",
+      cta: "Подтвердить присутствие",
       features: [
-        { icon: Calendar, text: "Дата скоро" },
+        { icon: Calendar, text: "10 июля 2026" },
         { icon: MapPin, text: "Адрес уточняется" },
         { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     terminal: {
       badge: "> wedding_invite.exe",
-      title: "$ marry --together",
-      highlight: "--forever",
+      title: "$ Elizaveta & Dmitry",
+      highlight: "--10.07.2026",
       subtitle: "// самый важный коммит в нашей жизни. ваше присутствие обязательно.",
       cta: "$ confirm --attend",
       features: [
-        { icon: Calendar, text: "--date soon" },
+        { icon: Calendar, text: "--10.07.2026" },
         { icon: MapPin, text: "--venue TBD" },
         { icon: Music, text: "--party mode" },
       ],
     },
     luxury: {
       badge: "Свадебное приглашение",
-      title: "Мы женимся!",
-      highlight: "Приходите",
+      title: "Елизавета & Дмитрий",
+      highlight: "10 июля 2026",
       subtitle:
         "Дорогие друзья и близкие, с нежностью и радостью приглашаем вас разделить с нами самый важный день нашей жизни.",
       cta: "Подтвердить присутствие",
       features: [
-        { icon: Calendar, text: "Дата скоро" },
+        { icon: Calendar, text: "10 июля 2026" },
         { icon: MapPin, text: "Место уточняется" },
         { icon: Music, text: "Торжество & вечеринка" },
       ],
