@@ -1,0 +1,31 @@
+{
+  "tests": [
+    {
+      "name": "RSVP - подтверждение присутствия",
+      "method": "POST",
+      "path": "/",
+      "body": {"email": "test@example.com"},
+      "expectedStatus": 200,
+      "expectedBody": {"status": "ok"},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "RSVP - повторная регистрация",
+      "method": "POST",
+      "path": "/",
+      "body": {"email": "test@example.com"},
+      "expectedStatus": 200,
+      "expectedBody": {"status": "already_registered"},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "RSVP - некорректный email",
+      "method": "POST",
+      "path": "/",
+      "body": {"email": "notanemail"},
+      "expectedStatus": 400,
+      "expectedBody": {"error": "Некорректный email"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
