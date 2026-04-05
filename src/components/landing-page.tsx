@@ -55,8 +55,8 @@ export function LandingPage() {
       cta: "Подтвердить присутствие",
       features: [
         { icon: Calendar, text: "10 июля 2026" },
-        { icon: MapPin, text: "Адрес уточняется" },
-        { icon: Music, text: "Торжество & вечеринка" },
+        { icon: MapPin, text: "ул. Пушкина, 62, Хабаровск" },
+        { icon: Music, text: "Начало в 15:50" },
       ],
     },
     dark: {
@@ -67,8 +67,8 @@ export function LandingPage() {
       cta: "Подтвердить присутствие",
       features: [
         { icon: Calendar, text: "10 июля 2026" },
-        { icon: MapPin, text: "Адрес уточняется" },
-        { icon: Music, text: "Торжество & вечеринка" },
+        { icon: MapPin, text: "ул. Пушкина, 62, Хабаровск" },
+        { icon: Music, text: "Начало в 15:50" },
       ],
     },
     retro: {
@@ -79,8 +79,8 @@ export function LandingPage() {
       cta: "Подтвердить присутствие",
       features: [
         { icon: Calendar, text: "10 июля 2026" },
-        { icon: MapPin, text: "Адрес уточняется" },
-        { icon: Music, text: "Торжество & вечеринка" },
+        { icon: MapPin, text: "ул. Пушкина, 62, Хабаровск" },
+        { icon: Music, text: "Начало в 15:50" },
       ],
     },
     neon: {
@@ -91,8 +91,8 @@ export function LandingPage() {
       cta: "ПОДТВЕРДИТЬ ПРИСУТСТВИЕ",
       features: [
         { icon: Calendar, text: "10 ИЮЛЯ 2026" },
-        { icon: MapPin, text: "АДРЕС УТОЧНЯЕТСЯ" },
-        { icon: Music, text: "ВЕЧЕРИНКА" },
+        { icon: MapPin, text: "УЛ. ПУШКИНА, 62, ХАБАРОВСК" },
+        { icon: Music, text: "НАЧАЛО В 15:50" },
       ],
     },
     monochrome: {
@@ -103,8 +103,8 @@ export function LandingPage() {
       cta: "Подтвердить присутствие",
       features: [
         { icon: Calendar, text: "10 июля 2026" },
-        { icon: MapPin, text: "Адрес уточняется" },
-        { icon: Music, text: "Торжество & вечеринка" },
+        { icon: MapPin, text: "ул. Пушкина, 62, Хабаровск" },
+        { icon: Music, text: "Начало в 15:50" },
       ],
     },
     glass: {
@@ -115,8 +115,8 @@ export function LandingPage() {
       cta: "Подтвердить присутствие",
       features: [
         { icon: Calendar, text: "10 июля 2026" },
-        { icon: MapPin, text: "Адрес уточняется" },
-        { icon: Music, text: "Торжество & вечеринка" },
+        { icon: MapPin, text: "ул. Пушкина, 62, Хабаровск" },
+        { icon: Music, text: "Начало в 15:50" },
       ],
     },
     terminal: {
@@ -127,8 +127,8 @@ export function LandingPage() {
       cta: "$ confirm --attend",
       features: [
         { icon: Calendar, text: "--10.07.2026" },
-        { icon: MapPin, text: "--venue TBD" },
-        { icon: Music, text: "--party mode" },
+        { icon: MapPin, text: "--pushkina_62_khabarovsk" },
+        { icon: Music, text: "--start 15:50" },
       ],
     },
     luxury: {
@@ -140,8 +140,8 @@ export function LandingPage() {
       cta: "Подтвердить присутствие",
       features: [
         { icon: Calendar, text: "10 июля 2026" },
-        { icon: MapPin, text: "Место уточняется" },
-        { icon: Music, text: "Торжество & вечеринка" },
+        { icon: MapPin, text: "ул. Пушкина, 62, Хабаровск" },
+        { icon: Music, text: "Начало в 15:50" },
       ],
     },
   }
