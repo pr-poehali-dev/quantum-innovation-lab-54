@@ -6,7 +6,8 @@ import { themes, type ThemeMode } from "@/lib/themes"
 import { cn } from "@/lib/utils"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { ArrowRight, Bell, Sparkles, Zap, Shield, Star } from "lucide-react"
+import { Heart, Music, MapPin, Calendar, Sparkles, Star } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function LandingPage() {
   const { theme } = useTheme()
@@ -48,101 +49,101 @@ export function LandingPage() {
     }
   > = {
     "minimal-light": {
-      badge: "Скоро запуск",
-      title: "Будущее",
-      highlight: "продуктивности",
+      badge: "Приглашение на свадьбу",
+      title: "Мы женимся!",
+      highlight: "Приходите",
       subtitle:
-        "Мы создаем то, что изменит ваш подход к работе. Просто, мощно и современно.",
-      cta: "Получить ранний доступ",
+        "Дорогие друзья, с радостью приглашаем вас разделить с нами этот особенный день. Нажмите ниже, чтобы подтвердить своё присутствие.",
+      cta: "Подтвердить приглашение",
       features: [
-        { icon: Sparkles, text: "На базе ИИ" },
-        { icon: Zap, text: "Молниеносно" },
-        { icon: Shield, text: "Приватность" },
+        { icon: Calendar, text: "Дата скоро" },
+        { icon: MapPin, text: "Адрес уточняется" },
+        { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     dark: {
-      badge: "Скоро старт",
-      title: "Новый уровень",
-      highlight: "эволюции",
-      subtitle: "Новый стандарт цифрового опыта. Создано для тех, кто требует лучшего.",
-      cta: "Встать в очередь",
+      badge: "Приглашение на свадьбу",
+      title: "Мы женимся!",
+      highlight: "Приходите",
+      subtitle: "Дорогие друзья, с радостью приглашаем вас разделить с нами этот особенный день.",
+      cta: "Подтвердить приглашение",
       features: [
-        { icon: Sparkles, text: "Новое поколение" },
-        { icon: Zap, text: "Сверхскорость" },
-        { icon: Shield, text: "Для бизнеса" },
+        { icon: Calendar, text: "Дата скоро" },
+        { icon: MapPin, text: "Адрес уточняется" },
+        { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     retro: {
-      badge: "Отправление скоро",
-      title: "Ваше путешествие",
-      highlight: "начинается здесь",
-      subtitle: "Шагните в мир, где классика встречает инновации. Вечный дизайн, современный функционал.",
-      cta: "Забронировать место",
+      badge: "Вас приглашают на свадьбу",
+      title: "Мы женимся!",
+      highlight: "Приходите",
+      subtitle: "С любовью приглашаем вас на наш особенный день. Ждём вас рядом с нами.",
+      cta: "Подтвердить приглашение",
       features: [
-        { icon: Sparkles, text: "Вечный дизайн" },
-        { icon: Zap, text: "Мгновенный доступ" },
-        { icon: Shield, text: "Надежность" },
+        { icon: Calendar, text: "Дата скоро" },
+        { icon: MapPin, text: "Адрес уточняется" },
+        { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     neon: {
-      badge: "[ ИНИЦИАЛИЗАЦИЯ ]",
-      title: "СИСТЕМНЫЙ",
-      highlight: "ПРОРЫВ",
-      subtitle: "Протокол интерфейса нового поколения. Ломаем барьеры. Переопределяем границы.",
-      cta: "НАЧАТЬ ДОСТУП",
+      badge: "[ СВАДЕБНОЕ ПРИГЛАШЕНИЕ ]",
+      title: "МЫ ЖЕНИМСЯ",
+      highlight: "ПРИХОДИТЕ",
+      subtitle: "Самый важный день нашей жизни. Разделите с нами это событие.",
+      cta: "ПОДТВЕРДИТЬ ПРИСУТСТВИЕ",
       features: [
-        { icon: Sparkles, text: "КВАНТОВОЕ ЯДРО" },
-        { icon: Zap, text: "ГИПЕРСКОРОСТЬ" },
-        { icon: Shield, text: "ШИФРОВАНИЕ" },
+        { icon: Calendar, text: "ДАТА СКОРО" },
+        { icon: MapPin, text: "АДРЕС УТОЧНЯЕТСЯ" },
+        { icon: Music, text: "ВЕЧЕРИНКА" },
       ],
     },
     monochrome: {
-      badge: "Анонс",
-      title: "Изысканная",
-      highlight: "простота",
-      subtitle: "Где форма встречает функцию. Создано с умыслом, спроектировано для эффекта.",
-      cta: "Получить уведомление",
+      badge: "Приглашение",
+      title: "Мы женимся!",
+      highlight: "Приходите",
+      subtitle: "С радостью приглашаем вас разделить с нами этот особенный день.",
+      cta: "Подтвердить приглашение",
       features: [
-        { icon: Sparkles, text: "Продуманно" },
-        { icon: Zap, text: "Эффективно" },
-        { icon: Shield, text: "Надежно" },
+        { icon: Calendar, text: "Дата скоро" },
+        { icon: MapPin, text: "Адрес уточняется" },
+        { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     glass: {
-      badge: "Превью",
-      title: "За пределами",
-      highlight: "границ",
-      subtitle: "Плавный опыт, который адаптируется под вас. Бесшовно, красиво, интуитивно.",
-      cta: "Запросить доступ",
+      badge: "Свадебное приглашение",
+      title: "Мы женимся!",
+      highlight: "Приходите",
+      subtitle: "Дорогие друзья, с радостью приглашаем вас разделить с нами этот особенный день.",
+      cta: "Подтвердить приглашение",
       features: [
-        { icon: Sparkles, text: "Адаптивно" },
-        { icon: Zap, text: "Бесшовно" },
-        { icon: Shield, text: "Безопасно" },
+        { icon: Calendar, text: "Дата скоро" },
+        { icon: MapPin, text: "Адрес уточняется" },
+        { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
     terminal: {
-      badge: "> status: pending",
-      title: "$ sudo launch",
-      highlight: "--force",
-      subtitle: "// требуется root доступ. ожидание подтверждения развертывания...",
-      cta: "$ subscribe --notify",
+      badge: "> wedding_invite.exe",
+      title: "$ marry --together",
+      highlight: "--forever",
+      subtitle: "// самый важный коммит в нашей жизни. ваше присутствие обязательно.",
+      cta: "$ confirm --attend",
       features: [
-        { icon: Sparkles, text: "--optimized" },
-        { icon: Zap, text: "--async" },
-        { icon: Shield, text: "--secure" },
+        { icon: Calendar, text: "--date soon" },
+        { icon: MapPin, text: "--venue TBD" },
+        { icon: Music, text: "--party mode" },
       ],
     },
     luxury: {
-      badge: "Эксклюзивный превью",
-      title: "Открываем",
-      highlight: "совершенство",
+      badge: "Свадебное приглашение",
+      title: "Мы женимся!",
+      highlight: "Приходите",
       subtitle:
-        "Для избранных ценителей. Опыт, созданный для тех, кто не соглашается на меньшее.",
-      cta: "Запросить приглашение",
+        "Дорогие друзья и близкие, с нежностью и радостью приглашаем вас разделить с нами самый важный день нашей жизни.",
+      cta: "Подтвердить присутствие",
       features: [
-        { icon: Sparkles, text: "Уникально" },
-        { icon: Zap, text: "Премиум" },
-        { icon: Shield, text: "Эксклюзив" },
+        { icon: Calendar, text: "Дата скоро" },
+        { icon: MapPin, text: "Место уточняется" },
+        { icon: Music, text: "Торжество & вечеринка" },
       ],
     },
   }
@@ -197,7 +198,7 @@ export function LandingPage() {
               theme === "luxury" && "border-amber-500/30",
             )}
           >
-            <Bell className="w-3 h-3 sm:w-4 sm:h-4" />
+            <Heart className="w-3 h-3 sm:w-4 sm:h-4" />
             {currentContent.badge}
           </div>
 
@@ -246,7 +247,7 @@ export function LandingPage() {
                 themeConfig.fontClass,
               )}
             >
-              {theme === "terminal" ? "// time_remaining:" : "До запуска"}
+              {theme === "terminal" ? "// time_remaining:" : "До нашей свадьбы"}
             </p>
             <ThemedCountdown targetDate={targetDate} />
             <button
@@ -383,7 +384,7 @@ export function LandingPage() {
           >
             <Input
               type="email"
-              placeholder={theme === "terminal" ? "your@email.sh" : "Введите email"}
+              placeholder={theme === "terminal" ? "your@email.sh" : "Ваш email для подтверждения"}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={cn(
@@ -405,7 +406,7 @@ export function LandingPage() {
               )}
             >
               {currentContent.cta}
-              <ArrowRight className="w-4 h-4" />
+              <Heart className="w-4 h-4" />
             </button>
           </div>
 
@@ -483,7 +484,7 @@ export function LandingPage() {
                 ))}
               </div>
               <span className="text-[10px] sm:text-xs">
-                {theme === "terminal" ? "// 2847 users_waiting" : "Уже 2 847+ в очереди"}
+                {theme === "terminal" ? "// 48 guests_confirmed" : "48 гостей уже подтвердили"}
               </span>
             </div>
           </div>
@@ -501,8 +502,8 @@ export function LandingPage() {
       >
         <p className="text-xs sm:text-sm">
           {theme === "terminal"
-            ? "© 2025 // launchpad_inc | privacy --policy | terms --conditions"
-            : "© 2025 LaunchPad Inc. · Политика конфиденциальности · Условия"}
+            ? "© 2025 // our_wedding | made_with --love"
+            : "Сделано с любовью ♡ Ждём вас на нашем торжестве"}
         </p>
       </footer>
     </div>
